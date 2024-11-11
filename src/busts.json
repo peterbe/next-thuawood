@@ -296,7 +296,7 @@
     "image": "photos/Gubbe/17-Jan/foto.jpg"
   },
   {
-    "oid": "kirurg persson",
+    "oid": "kirurg-persson",
     "title": "Kirurg Persson",
     "description": "",
     "published": true,
@@ -312,7 +312,7 @@
     "image": "photos/039/17-Jan/foto.jpg"
   },
   {
-    "oid": "hasse taxi",
+    "oid": "hasse-taxi",
     "title": "Hasse Taxi",
     "description": "",
     "published": true,
@@ -1120,7 +1120,7 @@
     "image": "photos/049/17-Jan/foto.jpg"
   },
   {
-    "oid": "polis fransson",
+    "oid": "polis-fransson",
     "title": "Polis Fransson",
     "description": "",
     "published": true,
