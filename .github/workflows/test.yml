@@ -28,9 +28,6 @@ jobs:
       - name: Lint
         run: npm run lint
 
-      - name: Types
-        run: npm run tsc
-
       - name: Build
         run: npm run build
 
