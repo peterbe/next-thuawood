@@ -28,16 +28,26 @@ export default function RootLayout({
 function Header() {
   return (
     <header className="container">
-      <div className="grid">
-        <div>
-          <Link href="/">Thuas Trägubbar</Link>
-        </div>
-        <div>
-          <Link href="/bilder">All bilder</Link> {" ⋅ "}
-          <Link href="/bilder">På Facebook</Link> {" ⋅ "}
-          <Link href="/kontakt">Kontakt</Link>
-        </div>
-      </div>
+      <nav>
+        <ul>
+          <li>
+            <strong>
+              <Link href="/">Thuas Trägubbar</Link>
+            </strong>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <Link href="/bilder">All bilder</Link>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/trafigurer">På Facebook</a>
+          </li>
+          <li>
+            <Link href="/kontakt">Kontakt</Link>
+          </li>
+        </ul>
+      </nav>
     </header>
   );
 }
@@ -46,7 +56,13 @@ const THIS_YEAR = new Date().getFullYear();
 function Footer() {
   return (
     <footer className="container" style={{ textAlign: "center", margin: 50 }}>
-      &copy; Thua Bengtsson {THIS_YEAR}
+      <p>
+        <Link href="/">Hem</Link> {" ⋅ "}
+        <Link href="/bilder">All bilder</Link> {" ⋅ "}
+        <Link href="/kontakt">Kontakt</Link> {" ⋅ "}
+        <a href="https://www.facebook.com/trafigurer">På Facebook</a>
+      </p>
+      <p>&copy; Thua Bengtsson {THIS_YEAR}</p>
     </footer>
   );
 }
