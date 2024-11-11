@@ -29,17 +29,23 @@ export default async function Page({ params }: { params: Promise<Params> }) {
 
       <img src={`/${bust.image}`} alt={bust.title} />
 
-      <p>
+      <p style={{ marginTop: 50, marginBottom: 100 }}>
         Datum:{" "}
         <strong>{new Date(bust.date).toLocaleDateString("sv-SE")}</strong>
       </p>
 
-      <hr />
-      {next && <ThumbnailLink bust={next}>Nästa: {next.title}</ThumbnailLink>}
-      <br />
-      {prev && (
-        <ThumbnailLink bust={prev}>Föregående: {prev.title}</ThumbnailLink>
-      )}
+      <div className="grid">
+        <div>
+          {prev && (
+            <ThumbnailLink bust={prev}>Föregående: {prev.title}</ThumbnailLink>
+          )}
+        </div>
+        <div>
+          {next && (
+            <ThumbnailLink bust={next}>Nästa: {next.title}</ThumbnailLink>
+          )}
+        </div>
+      </div>
     </div>
   );
 }
@@ -51,5 +57,22 @@ function ThumbnailLink({
   bust: Bust;
   children: React.ReactNode;
 }) {
-  return <Link href={`/bilder/${bust.oid}`}>{children}</Link>;
+  return (
+    <article>
+      <div className="grid">
+        <div>
+          <Link href={`/bilder/${bust.oid}`}>
+            <img
+              src={`/${bust.image}`}
+              alt={bust.title}
+              style={{ width: 100, height: 100, objectFit: "contain" }}
+            />
+          </Link>
+        </div>
+        <div>
+          <Link href={`/bilder/${bust.oid}`}>{children}</Link>
+        </div>
+      </div>
+    </article>
+  );
 }

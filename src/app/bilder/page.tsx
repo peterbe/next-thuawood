@@ -5,7 +5,7 @@ export default async function Page() {
   const { busts } = await getBusts();
   return (
     <div>
-      <h1>All Thuas Trägubbar</h1>
+      <h1>Alla Thuas Trägubbar</h1>
       {busts.map((bust) => {
         return (
           <article
@@ -38,6 +38,4 @@ export default async function Page() {
       })}
     </div>
   );
-
-  // ...
 }
