@@ -1,0 +1,43 @@
+name: Tests
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Types
+        run: npm run tsc
+
+      - name: Build
+        run: npm run build
+
+      - name: Serve app
+        env:
+          PORT: 3000
+        run: |
+
+          npm run serve &
+          sleep 1
+          curl --fail --retry-connrefused --retry 3 localhost:3000
+          curl --fail http://localhost:3000/bilder
+          curl --fail http://localhost:3000/kontakt
