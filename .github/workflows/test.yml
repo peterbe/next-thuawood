@@ -36,7 +36,7 @@ jobs:
           PORT: 3000
         run: |
 
-          npm run serve &
+          npm run start &
           sleep 1
           curl --fail --retry-connrefused --retry 3 localhost:3000
           curl --fail http://localhost:3000/bilder
