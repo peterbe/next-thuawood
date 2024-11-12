@@ -32,7 +32,9 @@ jobs:
         run: npm run build
 
       - name: Make sure all images are webp
-        run: npm run images-to-webp
+        run: |
+          npm run images-to-webp
+          git diff --exit-code
 
       - name: Serve app
         env:
