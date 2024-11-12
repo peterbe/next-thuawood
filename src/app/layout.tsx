@@ -55,7 +55,10 @@ function Header() {
 const THIS_YEAR = new Date().getFullYear();
 function Footer() {
   return (
-    <footer className="container" style={{ textAlign: "center", margin: 50 }}>
+    <footer
+      className="container"
+      style={{ textAlign: "center", marginTop: 50 }}
+    >
       <p>
         <Link href="/">Hem</Link> {" ⋅ "}
         <Link href="/bilder">All bilder</Link> {" ⋅ "}
