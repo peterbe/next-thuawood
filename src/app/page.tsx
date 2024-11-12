@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Thuas Trägubbar",
+  description:
+    "Trägubbar, snideri, hantverk, trä, träskulptur, träfigur, träleksak, träleksaker, trägubbe, trägubbar",
+};
 
 export default function Home() {
   return (

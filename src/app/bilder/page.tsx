@@ -1,5 +1,10 @@
+import type { Metadata } from "next";
 import { getBusts } from "@/db";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Alla bilder - Thuas Trägubbar",
+};
 
 export default async function Page() {
   const { busts } = await getBusts();

@@ -8,7 +8,6 @@ build:
     npm run build
 
 start: build
-    tree out
     npm run start
 
 pretty:
