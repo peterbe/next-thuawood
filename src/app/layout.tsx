@@ -1,12 +1,12 @@
-import type { Metadata } from "next";
 import "@picocss/pico/css/pico.pumpkin.min.css";
 import "../styles.css";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "Thuas trägubbar",
-  description:
-    "Trägubbar, snideri, hantverk, trä, träskulptur, träfigur, träleksak, träleksaker, trägubbe, trägubbar",
+export const metadata = {
+  metadataBase: new URL("https://www.thuasgubbar.se"),
+  openGraph: {
+    images: "/images/ubat.jpg",
+  },
 };
 
 export default function RootLayout({

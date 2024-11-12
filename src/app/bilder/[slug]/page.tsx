@@ -1,5 +1,23 @@
+import type { Metadata } from "next";
 import { type Bust, getBust, getBusts } from "@/db";
 import Link from "next/link";
+
+type Props = {
+  params: Promise<{ slug: string }>;
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+  const { bust } = await getBust(slug);
+
+  return {
+    title: bust.title,
+    description: bust.description,
+    openGraph: {
+      images: [`/${bust.image}`],
+    },
+  };
+}
 
 export async function generateStaticParams() {
   const { busts } = await getBusts();
@@ -13,9 +31,7 @@ export async function generateStaticParams() {
 
 type Params = {
   slug: string;
-  prev: Bust | undefined;
-  next: Bust | undefined;
-} & Bust;
+};
 
 export default async function Page({ params }: { params: Promise<Params> }) {
   const { slug } = await params;

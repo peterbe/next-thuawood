@@ -1,3 +1,9 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Kontakt - Thuas Trägubbar",
+};
+
 export default async function Page() {
   return (
     <div>
