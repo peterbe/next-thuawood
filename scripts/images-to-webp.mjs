@@ -46,6 +46,12 @@ function getImages(dir) {
 
 function convert(input, output) {
   console.log(`converting ${input} to ${output}`);
+  if (process.env.CI) {
+    throw new Error(
+      `THIS IS CI. The file ${input} hasn't already been converted to webp.\n
+      Please run 'npm run images-to-webp' locally and commit the changes.`
+    );
+  }
   execSync(`cwebp "${input}" -o "${output}"`);
   console.log("Created", output);
 }
