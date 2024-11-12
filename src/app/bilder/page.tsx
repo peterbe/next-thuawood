@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getBusts } from "@/db";
 import Link from "next/link";
+import { Picture } from "@/picture";
 
 export const metadata: Metadata = {
   title: "Alla bilder - Thuas Trägubbar",
@@ -18,7 +19,7 @@ export default async function Page() {
             style={{ display: "flex", alignItems: "center" }}
           >
             <Link href={`/bilder/${bust.oid}`}>
-              <img
+              <Picture
                 src={bust.image}
                 alt={bust.title}
                 style={{
