@@ -7,7 +7,8 @@
     "build": "next build",
     "#start": "next start",
     "start": "serve -p 3000 out",
-    "lint": "next lint"
+    "lint": "next lint",
+    "images-to-webp": "node ./scripts/images-to-webp.mjs"
   },
   "dependencies": {
     "@picocss/pico": "^2.0.6",

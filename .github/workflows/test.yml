@@ -31,6 +31,9 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Make sure all images are webp
+        run: npm run images-to-webp
+
       - name: Serve app
         env:
           PORT: 3000
