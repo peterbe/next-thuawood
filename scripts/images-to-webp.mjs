@@ -22,22 +22,13 @@ function getImages(dir) {
     if (ent.isDirectory()) {
       images.push(...getImages(`${dir}/${ent.name}`));
     } else if (ent.isFile()) {
-      let name = ent.name;
+      const name = ent.name.toLowerCase();
       if (
         name.endsWith(".jpg") ||
         name.endsWith(".jpeg") ||
         name.endsWith(".png")
       ) {
         images.push(`${dir}/${ent.name}`);
-      } else {
-        name = name.toLowerCase();
-        if (
-          name.endsWith(".jpg") ||
-          name.endsWith(".jpeg") ||
-          name.endsWith(".png")
-        ) {
-          console.log("WARNING! Case mismatch", `${dir}/${ent.name}`);
-        }
       }
     }
   }
