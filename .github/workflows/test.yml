@@ -19,7 +19,7 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
           cache: 'npm'
 
       - name: Install dependencies
@@ -43,8 +43,8 @@ jobs:
         run: |
 
           npm run start &
-          sleep 1
-          curl --fail --retry-connrefused --retry 3 localhost:3000
-          curl --fail http://localhost:3000/bilder
-          curl --fail http://localhost:3000/kontakt
-          curl --fail http://localhost:3000/bilder/frank-zappa
+          sleep 3
+          curl --fail --retry-connrefused --retry 3 http://localhost:3000
+          curl --fail http://localhost:3000/bilder > /dev/null
+          curl --fail http://localhost:3000/kontakt > /dev/null
+          curl --fail http://localhost:3000/bilder/frank-zappa > /dev/null
