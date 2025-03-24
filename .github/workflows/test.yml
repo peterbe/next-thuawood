@@ -43,7 +43,7 @@ jobs:
         run: |
 
           npm run start &
-          sleep 1
+          sleep 3
           curl --fail --retry-connrefused --retry 3 localhost:3000
           curl --fail http://localhost:3000/bilder
           curl --fail http://localhost:3000/kontakt
