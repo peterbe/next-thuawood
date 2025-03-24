@@ -8,7 +8,8 @@
     "#start": "next start",
     "start": "serve -p 3000 out",
     "lint": "next lint",
-    "images-to-webp": "node ./scripts/images-to-webp.mjs"
+    "images-to-webp": "node ./scripts/images-to-webp.mjs",
+    "test": "node ./scripts/test.mjs"
   },
   "dependencies": {
     "@picocss/pico": "^2.0.6",
@@ -23,6 +24,7 @@
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "15.0.3",
+    "got": "^14.4.6",
     "serve": "^14.2.4",
     "typescript": "^5"
   }
