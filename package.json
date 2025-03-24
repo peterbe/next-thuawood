@@ -15,8 +15,8 @@
     "@picocss/pico": "^2.0.6",
     "next": "15.2.3",
     "prettier": "^3.4.2",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react": "^19",
+    "react-dom": "^19"
   },
   "devDependencies": {
     "@types/node": "^22",
