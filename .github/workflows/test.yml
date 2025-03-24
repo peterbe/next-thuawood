@@ -44,7 +44,4 @@ jobs:
 
           npm run start &
           sleep 3
-          curl --fail --retry-connrefused --retry 3 http://localhost:3000
-          curl --fail http://localhost:3000/bilder > /dev/null
-          curl --fail http://localhost:3000/kontakt > /dev/null
-          curl --fail http://localhost:3000/bilder/frank-zappa > /dev/null
+          npm run test
