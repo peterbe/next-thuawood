@@ -1,6 +1,3 @@
-import got from "got";
-import { title } from "process";
-
 const BASE_URL = process.env.BASE_URL || "http://localhost:3000";
 const URLS = ["/", "/bilder", "/kontakt", "/bilder/frank-zappa"];
 
