@@ -14,7 +14,7 @@
   "dependencies": {
     "@picocss/pico": "^2.1.1",
     "next": "15.3.4",
-    "prettier": "^3.5.3",
+    "prettier": "^3.6.2",
     "react": "^19",
     "react-dom": "^19"
   },
