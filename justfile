@@ -31,5 +31,8 @@ format: prettyfix lintfix
 install:
     npm install
 
-outdated:
+upgrade:
     npx npm-check-updates --interactive
+
+outdated:
+    npm outdated
