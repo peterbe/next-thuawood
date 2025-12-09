@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { getBusts } from "@/db";
 import Link from "next/link";
+import { getBusts } from "@/db";
 import { Picture } from "@/picture";
 
 export const metadata: Metadata = {

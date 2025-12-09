@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { type Bust, getBust, getBusts } from "@/db";
 import Link from "next/link";
+import { type Bust, getBust, getBusts } from "@/db";
 
 type Props = {
   params: Promise<{ slug: string }>;

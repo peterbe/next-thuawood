@@ -1,10 +1,10 @@
-import { readdirSync, existsSync } from "fs";
-import { execSync } from "child_process";
+import { execSync } from "node:child_process";
+import { existsSync, readdirSync } from "node:fs";
 
 main();
 
 async function main() {
-  const files = readdirSync("public/images", { withFileTypes: true });
+  const _files = readdirSync("public/images", { withFileTypes: true });
 
   const images = [...getImages("public/images"), ...getImages("public/photos")];
   for (const image of images) {
@@ -40,7 +40,7 @@ function convert(input, output) {
   if (process.env.CI) {
     throw new Error(
       `THIS IS CI. The file ${input} hasn't already been converted to webp.\n
-      Please run 'npm run images-to-webp' locally and commit the changes.`
+      Please run 'npm run images-to-webp' locally and commit the changes.`,
     );
   }
   execSync(`cwebp "${input}" -o "${output}"`);
