@@ -16,17 +16,11 @@ pretty:
 tsc:
     npm run tsc
 
-lint: pretty
+lint:
     npm run lint
-    npm run tsc
 
-lintfix: prettyfix
-    npm run lint:fix
-
-prettyfix:
-    npm run pretty:fix
-
-format: prettyfix lintfix
+format:
+    npm run format
 
 install:
     npm install

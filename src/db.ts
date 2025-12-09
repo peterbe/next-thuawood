@@ -1,5 +1,5 @@
-import { readFile } from "fs/promises";
-import { resolve } from "path";
+import { readFile } from "node:fs/promises";
+import { resolve } from "node:path";
 
 export type Bust = {
   oid: string;
