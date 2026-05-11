@@ -10,17 +10,17 @@
     "format": "npx @biomejs/biome check --write --unsafe",
     "start": "serve -p 3000 out",
     "images-to-webp": "node ./scripts/images-to-webp.mjs",
-    "test": "node ./scripts/test.mjs"
+    "test": "node ./scripts/test.mjs",
+    "postinstall": "npx @biomejs/biome migrate --write"
   },
   "dependencies": {
     "@picocss/pico": "^2.1.1",
     "next": "16.2.6",
-    "prettier": "^3.8.1",
     "react": "^19",
     "react-dom": "^19"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.4.5",
+    "@biomejs/biome": "2.4.15",
     "@types/node": "^25",
     "@types/react": "^19",
     "@types/react-dom": "^19",
