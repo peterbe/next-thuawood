@@ -1446,5 +1446,29 @@
     "description": "",
     "published": true,
     "date": "2026-08-16T21:07:26.659Z"
+  },
+  {
+    "oid": "chefskock",
+    "title": "Chefskock",
+    "image": "photos/chefskock/image57.jpeg",
+    "description": "",
+    "published": true,
+    "date": "2026-08-16T21:09:47.634Z"
+  },
+  {
+    "oid": "sickan",
+    "title": "Sickan",
+    "image": "photos/sickan/image40.jpeg",
+    "description": "",
+    "published": true,
+    "date": "2026-08-16T21:10:21.294Z"
+  },
+  {
+    "oid": "borje",
+    "title": "Börje",
+    "image": "photos/borje/image47.jpeg",
+    "description": "",
+    "published": true,
+    "date": "2026-08-16T21:11:44.215Z"
   }
 ]
