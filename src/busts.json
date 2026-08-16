@@ -1270,5 +1270,37 @@
     "description": "",
     "published": true,
     "date": "2026-08-16T19:07:52.237Z"
+  },
+  {
+    "oid": "magnus-uggla",
+    "title": "Magnus Uggla",
+    "image": "photos/magnus-uggla/image0.jpeg",
+    "description": "",
+    "published": true,
+    "date": "2026-08-16T19:08:46.993Z"
+  },
+  {
+    "oid": "rosemari-och-bengt-elon-jonasson",
+    "title": "Rosemari och Bengt-Elon Jonasson",
+    "image": "photos/rosemari-och-bengt-elon-jonasson/image26.jpeg",
+    "description": "",
+    "published": true,
+    "date": "2026-08-16T19:09:22.973Z"
+  },
+  {
+    "oid": "stefan-wistingsgard",
+    "title": "Stefan Wistingsgård",
+    "image": "photos/stefan-wistingsgard/image22.jpeg",
+    "description": "",
+    "published": true,
+    "date": "2026-08-16T19:10:28.271Z"
+  },
+  {
+    "oid": "tambumajor",
+    "title": "Tamburmajor",
+    "image": "photos/tambumajor/image2.jpeg",
+    "description": "",
+    "published": true,
+    "date": "2026-08-16T19:10:52.966Z"
   }
 ]
