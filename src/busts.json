@@ -1238,5 +1238,37 @@
     "description": "",
     "published": true,
     "date": "2026-08-16T19:03:35.116Z"
+  },
+  {
+    "oid": "john-lennon",
+    "title": "John Lennon",
+    "image": "photos/john-lennon/image17.jpeg",
+    "description": "",
+    "published": true,
+    "date": "2026-08-16T19:04:26.672Z"
+  },
+  {
+    "oid": "karl-axel-skoglund",
+    "title": "Karl Axel Skoglund",
+    "image": "photos/karl-axel-skoglund/image25.jpeg",
+    "description": "",
+    "published": true,
+    "date": "2026-08-16T19:04:59.749Z"
+  },
+  {
+    "oid": "kung-och-drottning",
+    "title": "Kung och drottning",
+    "image": "photos/kung-och-drottning/image9.jpeg",
+    "description": "",
+    "published": true,
+    "date": "2026-08-16T19:05:54.010Z"
+  },
+  {
+    "oid": "l-a-larsson",
+    "title": "L-A Larsson",
+    "image": "photos/l-a-larsson/image27.jpeg",
+    "description": "",
+    "published": true,
+    "date": "2026-08-16T19:07:52.237Z"
   }
 ]
