@@ -19,44 +19,45 @@ async function main() {
     validate: (value) => value.trim().length > 0 || "Title cannot be empty",
   });
 
-//   console.log(`Image: ${imagePath}`);
-//   console.log(`Title: ${title}`);
+  //   console.log(`Image: ${imagePath}`);
+  //   console.log(`Title: ${title}`);
 
   await addPhoto(imagePath, title.trim());
   console.log(`Added photo ${imagePath} with title "${title.trim()}"`);
 }
 
-
 type Bust = {
-    oid: string;
-    title: string;
-    description?: string;
-    image: string;
-    published: boolean;
-    date: string
-}
+  oid: string;
+  title: string;
+  description?: string;
+  image: string;
+  published: boolean;
+  date: string;
+};
 
 async function addPhoto(imagePath: string, title: string) {
-    const busts = JSON.parse(readFileSync("src/busts.json", "utf-8")) as Bust[];
-    const found = busts.find(b => b.image === imagePath);
-    if (found) {
-        throw new Error(`Bust with image ${imagePath} already exists: ${found.title}`);
-    }
-    // get the parent directory name of the image path
-    const oid = imagePath.split("/").slice(-2, -1)[0].toLocaleLowerCase();
-    const oidFound = busts.find(b => b.oid === oid);
-    if (oidFound) {
-        throw new Error(`Bust with oid ${oid} already exists: ${oidFound.title}`);
-    }
+  const busts = JSON.parse(readFileSync("src/busts.json", "utf-8")) as Bust[];
+  const found = busts.find((b) => b.image === imagePath);
+  if (found) {
+    throw new Error(
+      `Bust with image ${imagePath} already exists: ${found.title}`,
+    );
+  }
+  // get the parent directory name of the image path
+  const oid = imagePath.split("/").slice(-2, -1)[0].toLocaleLowerCase();
+  const oidFound = busts.find((b) => b.oid === oid);
+  if (oidFound) {
+    throw new Error(`Bust with oid ${oid} already exists: ${oidFound.title}`);
+  }
 
-    const newBust: Bust = {
-        oid,
-        title,
-        image: imagePath.replace('public/', ''),
-        description: "",
-        published: true,
-        date: new Date().toISOString()
-    };
-    busts.push(newBust);
-    writeFileSync("src/busts.json", JSON.stringify(busts, null, 2));
+  const newBust: Bust = {
+    oid,
+    title,
+    image: imagePath.replace("public/", ""),
+    description: "",
+    published: true,
+    date: new Date().toISOString(),
+  };
+  busts.push(newBust);
+  writeFileSync("src/busts.json", JSON.stringify(busts, null, 2));
 }
