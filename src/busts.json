@@ -1302,5 +1302,37 @@
     "description": "",
     "published": true,
     "date": "2026-08-16T19:10:52.966Z"
+  },
+  {
+    "oid": "huskvarna-musikkar",
+    "title": "Huskvarna Musikkår",
+    "image": "photos/huskvarna-musikkar/image30.jpeg",
+    "description": "",
+    "published": true,
+    "date": "2026-08-16T19:20:06.890Z"
+  },
+  {
+    "oid": "lennart-pyllen-augustsson",
+    "title": "Lennart Pyllen Augustsson",
+    "image": "photos/lennart-pyllen-augustsson/image31.jpeg",
+    "description": "",
+    "published": true,
+    "date": "2026-08-16T19:21:23.893Z"
+  },
+  {
+    "oid": "lars-axenfjord",
+    "title": "Lars Axenfjord",
+    "image": "photos/lars-axenfjord/image32.jpeg",
+    "description": "",
+    "published": true,
+    "date": "2026-08-16T19:22:29.021Z"
+  },
+  {
+    "oid": "hercule-poirot",
+    "title": "Hercule Poirot",
+    "image": "photos/hercule-poirot/image33.jpeg",
+    "description": "",
+    "published": true,
+    "date": "2026-08-16T19:23:28.228Z"
   }
 ]

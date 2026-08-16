@@ -13,14 +13,14 @@ async function main() {
     console.error(`No such file: ${imagePath}`);
     process.exit(1);
   }
+  await inputImage(imagePath);
+}
 
+async function inputImage(imagePath: string) {
   const title = await input({
     message: "Title:",
     validate: (value) => value.trim().length > 0 || "Title cannot be empty",
   });
-
-  //   console.log(`Image: ${imagePath}`);
-  //   console.log(`Title: ${title}`);
 
   await addPhoto(imagePath, title.trim());
   console.log(`Added photo ${imagePath} with title "${title.trim()}"`);
@@ -43,7 +43,7 @@ async function addPhoto(imagePath: string, title: string) {
       `Bust with image ${imagePath} already exists: ${found.title}`,
     );
   }
-  // get the parent directory name of the image path
+
   const oid = imagePath.split("/").slice(-2, -1)[0].toLocaleLowerCase();
   const oidFound = busts.find((b) => b.oid === oid);
   if (oidFound) {
