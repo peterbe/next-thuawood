@@ -1206,5 +1206,21 @@
     "description": "",
     "published": true,
     "date": "2026-08-16T18:52:27.068Z"
+  },
+  {
+    "oid": "eric-clapton3",
+    "title": "Eric Clapton",
+    "image": "photos/eric-clapton3/image12.jpeg",
+    "description": "",
+    "published": true,
+    "date": "2026-08-16T19:00:53.941Z"
+  },
+  {
+    "oid": "gubbe-med-hund",
+    "title": "Gubbe med hund",
+    "image": "photos/gubbe-med-hund/image1.jpeg",
+    "description": "",
+    "published": true,
+    "date": "2026-08-16T19:01:24.421Z"
   }
 ]
