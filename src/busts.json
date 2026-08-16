@@ -1422,5 +1422,29 @@
     "description": "",
     "published": true,
     "date": "2026-08-16T19:42:27.425Z"
+  },
+  {
+    "oid": "disputation",
+    "title": "Disputation",
+    "image": "photos/disputation/image48.jpeg",
+    "description": "",
+    "published": true,
+    "date": "2026-08-16T21:05:19.999Z"
+  },
+  {
+    "oid": "che-guevara",
+    "title": "Che Guevara",
+    "image": "photos/che-guevara/image43.jpeg",
+    "description": "",
+    "published": true,
+    "date": "2026-08-16T21:06:13.907Z"
+  },
+  {
+    "oid": "sallskapsresan",
+    "title": "Sällskapsresan",
+    "image": "photos/sallskapsresan/image39.jpeg",
+    "description": "",
+    "published": true,
+    "date": "2026-08-16T21:07:26.659Z"
   }
 ]
