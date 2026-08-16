@@ -12,7 +12,7 @@ export default async function Page() {
   return (
     <div>
       <h1>Alla Thuas Trägubbar</h1>
-      {busts.map((bust) => {
+      {busts.map((bust, i) => {
         return (
           <article
             key={bust.oid}
@@ -27,6 +27,7 @@ export default async function Page() {
                   marginRight: 20,
                   marginBottom: 20,
                 }}
+                loading={i > 25 ? "lazy" : undefined}
               />
             </Link>
             <div>
