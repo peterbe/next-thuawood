@@ -1334,5 +1334,53 @@
     "description": "",
     "published": true,
     "date": "2026-08-16T19:23:28.228Z"
+  },
+  {
+    "oid": "agneta-faltskog",
+    "title": "Agneta Fältskog",
+    "image": "photos/agneta-faltskog/image36.jpeg",
+    "description": "",
+    "published": true,
+    "date": "2026-08-16T19:27:17.059Z"
+  },
+  {
+    "oid": "far-och-dotter",
+    "title": "Far och dotter",
+    "image": "photos/far-och-dotter/image46.jpeg",
+    "description": "",
+    "published": true,
+    "date": "2026-08-16T19:28:23.253Z"
+  },
+  {
+    "oid": "helan-och-halvan",
+    "title": "Helan & Halvan",
+    "image": "photos/helan-och-halvan/image37.jpeg",
+    "description": "",
+    "published": true,
+    "date": "2026-08-16T19:29:27.710Z"
+  },
+  {
+    "oid": "vanhedern",
+    "title": "Vanhedern",
+    "image": "photos/vanhedern/image42.jpeg",
+    "description": "",
+    "published": true,
+    "date": "2026-08-16T19:30:16.507Z"
+  },
+  {
+    "oid": "tant-var-det-har",
+    "title": "Tänt var det här",
+    "image": "photos/tant-var-det-har/image41.jpeg",
+    "description": "",
+    "published": true,
+    "date": "2026-08-16T19:31:35.798Z"
+  },
+  {
+    "oid": "timpa-simonsson-2",
+    "title": "Timpa Simonsson",
+    "image": "photos/timpa-simonsson-2/image45.jpeg",
+    "description": "",
+    "published": true,
+    "date": "2026-08-16T19:33:02.213Z"
   }
 ]
