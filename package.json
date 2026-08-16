@@ -28,6 +28,6 @@
     "@types/react-dom": "^19",
     "commander": "^15.0.0",
     "serve": "^14.2.6",
-    "typescript": "^5"
+    "typescript": "^7"
   }
 }
