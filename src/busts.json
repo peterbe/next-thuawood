@@ -1382,5 +1382,45 @@
     "description": "",
     "published": true,
     "date": "2026-08-16T19:33:02.213Z"
+  },
+  {
+    "oid": "grattis-kim",
+    "title": "Grattis Kim",
+    "image": "photos/grattis-kim/image61.jpeg",
+    "description": "",
+    "published": true,
+    "date": "2026-08-16T19:37:57.249Z"
+  },
+  {
+    "oid": "lars-lerin",
+    "title": "Lars Lerin",
+    "image": "photos/lars-lerin/image59.jpeg",
+    "description": "",
+    "published": true,
+    "date": "2026-08-16T19:38:52.479Z"
+  },
+  {
+    "oid": "karl-lagerfeld",
+    "title": "Karl Lagerfeld",
+    "image": "photos/karl-lagerfeld/image44.jpeg",
+    "description": "",
+    "published": true,
+    "date": "2026-08-16T19:40:01.610Z"
+  },
+  {
+    "oid": "jonssonligan",
+    "title": "Jönssonligan",
+    "image": "photos/jonssonligan/image49.jpeg",
+    "description": "",
+    "published": true,
+    "date": "2026-08-16T19:40:59.104Z"
+  },
+  {
+    "oid": "marilyn-monroe-2",
+    "title": "Marilyn Monroe",
+    "image": "photos/marilyn-monroe-2/image38.jpeg",
+    "description": "",
+    "published": true,
+    "date": "2026-08-16T19:42:27.425Z"
   }
 ]
