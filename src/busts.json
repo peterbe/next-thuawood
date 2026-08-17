@@ -1470,5 +1470,37 @@
     "description": "",
     "published": true,
     "date": "2026-08-16T21:11:44.215Z"
+  },
+  {
+    "oid": "robert-gustavsson",
+    "title": "Robert Gustavsson",
+    "image": "photos/robert-gustavsson/image60.jpeg",
+    "description": "",
+    "published": true,
+    "date": "2026-08-17T11:39:44.524Z"
+  },
+  {
+    "oid": "gert-wingard-mark-isit",
+    "title": "Gert Wingärd o Mark Isit",
+    "image": "photos/gert-wingard-mark-isit/image58.jpeg",
+    "description": "",
+    "published": true,
+    "date": "2026-08-17T11:41:40.177Z"
+  },
+  {
+    "oid": "min-familj",
+    "title": "Min familj",
+    "image": "photos/min-familj/image53.jpeg",
+    "description": "",
+    "published": true,
+    "date": "2026-08-17T11:42:33.143Z"
+  },
+  {
+    "oid": "churchill",
+    "title": "Churchill",
+    "image": "photos/churchill/image51.jpeg",
+    "description": "",
+    "published": true,
+    "date": "2026-08-17T11:43:31.854Z"
   }
 ]
