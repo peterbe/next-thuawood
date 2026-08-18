@@ -16,7 +16,7 @@ export default async function Page() {
         return (
           <article
             key={bust.oid}
-            style={{ display: "flex", alignItems: "center" }}
+            style={{ display: "flex", alignItems: "center", gap: 20 }}
           >
             <Link href={`/bilder/${bust.oid}`}>
               <Picture
