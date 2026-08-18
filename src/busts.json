@@ -1502,5 +1502,21 @@
     "description": "",
     "published": true,
     "date": "2026-08-17T11:43:31.854Z"
+  },
+  {
+    "oid": "albert-o-herbert",
+    "title": "Albert o Herbert",
+    "image": "photos/albert-o-herbert/image55.jpeg",
+    "description": "",
+    "published": true,
+    "date": "2026-08-18T12:17:09.629Z"
+  },
+  {
+    "oid": "gustav-vasa",
+    "title": "Gustav Vasa",
+    "image": "photos/gustav-vasa/image56.jpeg",
+    "description": "",
+    "published": true,
+    "date": "2026-08-18T12:18:11.226Z"
   }
 ]
